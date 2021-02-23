@@ -1,0 +1,11 @@
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin container($padding) {
+  max-width: 1118px;
+  margin: 0 auto;
+  padding: $padding;
+}

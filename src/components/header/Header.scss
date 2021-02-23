@@ -1,0 +1,76 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $ColorBlue;
+  width: 100%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: 1;
+
+  &__container {
+    @include container(16px 20px);
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    text-decoration: none;
+  }
+
+  &__coat-of-arms {
+    height: 56px;
+    width: 31px;
+  }
+
+  &__title {
+    margin: 0;
+    padding-left: 21px;
+    font-family: $FontSFProDisplay;
+    font-size: 18px;
+    color: $ColorWhite;
+  }
+
+  &__auth {
+    margin-left: 28px;
+    padding: 0;
+    font-family: $FontGOSTUI2;
+    font-size: 18px;
+    line-height: 24px;
+    color: $ColorWhite;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    transition: $TransitionOpacity;
+  }
+  
+  &__auth:hover {
+    opacity: 0.8;
+  }
+}
+
+.profile {
+  display: flex;
+  text-decoration: none;
+  transition: $TransitionOpacity;
+
+  &:hover {
+    opacity: 0.8;
+  }
+  
+  &__user-name {
+    margin-left: 15px;
+    font-family: $FontGOSTUI2;
+    font-size: 18px;
+    color: $ColorWhite;
+  }
+  
+}
+

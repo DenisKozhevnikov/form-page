@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "GOST UI 2";
+  font-weight: normal;
+  src: url(./GostUI2-regular.woff);
+}
+
+@font-face {
+  font-family: "GOST UI 2";
+  font-weight: 500;
+  src: url(./GostUI2-medium.woff);
+}
+
+@font-face {
+  font-family: "GOST UI 2";
+  font-weight: bold;
+  src: url(./GostUI2-bold.woff);
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-weight: 500;
+  src: url(./SFProDisplay-Medium.woff);
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-weight: bold;
+  src: url(./SFProDisplay-Bold.woff);
+}

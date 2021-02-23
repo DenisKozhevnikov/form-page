@@ -1,0 +1,210 @@
+/*! autoprefixer grid: autoplace */
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.application {
+  margin-top: 40px;
+  max-width: 736px;
+}
+
+.form {
+  // display: grid;
+  // row-gap: 16px;
+
+  &__label {
+    position: relative;
+    display: block;
+    margin-bottom: 16px;
+  }
+  
+  &__input-switch {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+  
+  &__container {
+    position: relative;
+    padding: 15px 15px 13px 46px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    background-color: $ColorGreyLighter;
+    border: 2px solid $ColorGreyLighter;
+    cursor: pointer;
+  }
+  
+  &__radio {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    height: 16px;
+    width: 16px;
+    border: 2px solid $ColorTextMain;
+    border-radius: 50%;
+    background-color: $ColorWhite;
+  }
+  
+  &__input-switch:checked + &__container {
+    border: 2px solid $ColorBlueMain;
+    background-color: $ColorWhite;
+  }
+  
+  &__input-switch:checked + &__container &__radio {
+    height: 8px;
+    width: 8px;
+    border: 6px solid $ColorBlueMain;
+  }
+  
+  &__name {
+    display: block;
+    margin: 0;
+    font-family: $FontGOSTUI2;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: $ColorTextMain;
+    user-select: none;
+  }
+  
+  &__status {
+    margin: 0;
+    font-family: $FontGOSTUI2;
+    font-size: 18px;
+    line-height: 24px;
+    color: $ColorTextMain;
+    user-select: none;
+  }
+  
+  &__button {
+    margin-bottom: 8px;
+    width: 100%;
+    background-color: $ColorBlueMain;
+    border-radius: 4px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    color: $ColorWhite;
+    height: 48px;
+    font-family: $FontGOSTUI2;
+    font-size: 18px;
+    transition: $TransitionOpacity;
+  }
+  
+  &__button:hover {
+    opacity: 0.8;
+  }
+  
+  &__label-text {
+    display: block;
+    font-family: $FontGOSTUI2;
+    font-size: 18px;
+    line-height: 24px;
+    color: $ColorTextMain;
+  }
+  
+  &__input-text {
+    margin-top: 8px;
+    width: 100%;
+    padding: 11px;
+    border: 1px solid rgba(59, 66, 86, 0.5);
+    border-radius: 4px;
+    font-family: $FontGOSTUI2;
+    font-size: 18px;
+    line-height: 24px;
+    color: $ColorTextMain;
+    box-sizing: border-box;
+  }
+  
+  &__label_series {
+    max-width: 160px;
+    display: inline-block;
+  }
+  
+  &__label_number {
+    max-width: 256px;
+    display: inline-block;
+    margin-left: 32px;
+    width: 100%;
+  }
+  
+  &__label-text_lighter {
+    color: #848e99;
+  }
+  
+  &__label_date {
+    display: inline-block;
+    max-width: 120px;
+    margin-right: 16px;
+  }
+  
+  &__label_year {
+    display: inline-block;
+    max-width: 176px;
+  }
+   
+  &__checkbox {
+    @include flexCenter();
+    
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    height: 16px;
+    width: 16px;
+    border: 2px solid $ColorTextMain;
+    background-color: $ColorWhite;
+    border-radius: 1px;
+  }
+  
+  &__input-switch:checked + &__container &__checkbox {
+    border-color: $ColorBlueMain;
+    background: $ColorBlueMain;
+  }
+
+  &__agreement {
+    margin: 8px 0;
+    font-family: $FontGOSTUI2;
+    font-size: 14px;
+    line-height: 20px;
+    color: $ColorTextMain;
+  }
+  
+  &__number {
+    font-weight: 700;
+  }
+  
+  &__error {
+    margin: 0;
+    padding-bottom: 5px;
+    font-family: $FontGOSTUI2;
+    color: #e03636;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+.warning {
+  display: flex;
+  margin: 24px 0 14px;
+  padding: 18px 20px 24px 20px;
+  background-color: $ColorYellowFade;
+
+  &__icon {
+    width: 16px;
+    height: 20px;
+  }
+  
+  &__text {
+    margin: 0;
+    padding-left: 16px;
+    max-width: 340px;
+    font-family: $FontGOSTUI2;
+    font-size: 18px;
+    line-height: 24px;
+    color: $ColorTextMain;
+  }
+}
+
+

@@ -1,0 +1,68 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 152px 0 288px;
+  background: $ColorGreyLight;
+  box-sizing: border-box;
+
+  &__container {
+    @include container(0 20px);
+  }
+  
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 38px;
+  border-bottom: 1px solid rgba(59, 66, 86, .3);;
+
+  &__content {
+    max-width: 736px;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: $FontSFProDisplay;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    color: $ColorTextMain;
+  }
+
+  &__text {
+    margin: 0;
+    padding-top: 25px;
+    font-family: $FontGOSTUI2;
+    font-size: 18px;
+    line-height: 24px;
+    color: $ColorTextMain;
+  }
+
+  &__sidebar {
+    margin-top: 16px;
+    margin-right: 43px;
+  }
+  
+  &__provided-by {
+    margin: 0;
+    padding-top: 10px;
+    font-family: $FontGOSTUI2;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: $ColorTextMain;
+  }
+  
+  &__sidebar-text {
+    margin: 0;
+    padding-top: 4px;
+    font-family: $FontGOSTUI2;
+    font-size: 14px;
+    line-height: 20px;
+    color: $ColorTextMain;
+  }
+}
