@@ -1,4 +1,7 @@
 # Тестовое задание: Работа с формой
+
+## [ссылка на рабочий вариант(gh-pages)](https://deniskozhevnikov.github.io/form-page/build/index.html)
+
 ## Что я использовал для создания данной страницы и почему
 * #### React
 * #### react-create-app 
